@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "constraint-solver"
+version = "0.1.0"
+description = "Problem-solving engine: CDCL SAT solver, finite-domain CSP solver with propagation, and modelling front-ends for Sudoku, N-Queens, graph colouring, scheduling and exact cover."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "JANIN A APURBA", email = "japurba97@gmail.com"}]
+keywords = ["research", "automation", "reproducibility", "academic"]
+dependencies = []
+
+[project.scripts]
+constraint-solver = "constraint_solver.cli:main"
+
+[tool.setuptools]
+packages = ["constraint_solver"]
